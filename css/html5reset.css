@@ -1,0 +1,181 @@
+body {
+  font-family: 'Raleway', 'Nunito';
+  margin: 0;
+  height: 100%
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+  height:40px;
+  width:40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  color: #8d2f3f;
+}
+
+p {
+  line-height: 24px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 0.6s ease-out;
+  transition: top 0.6s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  position: absolute;
+  top:20px;
+  color: red;
+  text-decoration-color: red;
+  text-decoration-style: dotted;
+}
+
+a:focus {
+  border: solid grey 2px;
+}
+
+header {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_links{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-self: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+
+nav ul a {
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #8d2f3f;
+  font-weight: 100;
+}
+
+nav ul a:hover {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #8d2f3f;
+}
+
+.current-nav-item {
+  font-weight: 900;
+  text-shadow: 0.7px 0.7px #8d2f3f;
+}
+
+h1{
+  font-family: 'Raleway', 'Nunito';
+  font-size: 44;
+  font-weight: 900;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+h2 {
+  font-family: 'Raleway', 'Nunito';;
+  font-size: 32;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media all and (min-width: 650px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+  #logo {
+
+  }
+}
+
+@media all and (min-width: 1150px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+	  scroll-behavior: auto;
+	  animation: none;
+  }
+
+	a.skip {
+	-webkit-transition: none;
+	transition: none;
+	animation: none;
+  }
+
+	.parallax {
+	-webkit-transition: none;
+	transition: none;
+	animation: none;
+}
+
+	.scene:hover, .scene:focus, .flip-card {
+	-webkit-transition: none;
+	transition: none;
+	animation: none;
+  }
+
+  .flip:focus {
+	-webkit-transition: none;
+	transition: none;
+	animation: none;
+  }
+
+  .project.a:hover {
+	filter: none;
+	}
+
+}

@@ -1,0 +1,147 @@
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+
+input[type=submit] {
+  background-color: #8d2f3f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #8d2f3f
+  color: black;
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro {
+  background-color: #8d2f3f;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  margin-bottom: 100px;
+}
+
+.intro > p {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-div {
+  text-align: center;
+  padding: 20px;
+}
+
+.project {
+  margin-bottom: 200px;
+}
+
+.project > a {
+  min-height: 270px;
+  width: 300px;
+}
+
+#pj-1 {
+  background-image: url(../images/banner-1.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #8d2f3f;
+}
+
+#pj-2 {
+  background-image: url(../images/poster.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #8d2f3f;
+}
+
+#pj-3 {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #8d2f3f;
+}
+
+.title, .description {
+  color: #fff;
+  background-color: rgba(141, 47, 63, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.project > a:hover {
+  filter: grayscale(100%);
+  border: solid #8d2f3f 6px;
+}
+
+.form {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 200px;
+}
+
+@media all and (min-width: 1150px) {
+  .project {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project > a {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .project > a {
+    min-height: 360px;
+    width: 80%
+  }
+
+  .form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

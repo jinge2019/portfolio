@@ -1,0 +1,104 @@
+h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#skip {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.gallery-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  align-content: center;
+  justify-content: center;
+}
+
+.work {
+  max-width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  box-shadow: 8px 8px 8px grey;
+  border: solid grey 1px;
+}
+
+.gallery-1  .left > img {
+  margin: 20px;
+}
+
+.scene {
+  background-color: transparent;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.scene:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.scene:focus .flip-card {
+  transform: rotateX(180deg);
+}
+
+.front-side, .back-side, .front-side-2, .back-side-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front-side, .front-side-2 {
+  background-color: transparent;
+  color: black;
+}
+
+.back-side, .back-side-2 {
+  background-color: transparent;
+  transform: rotateY(180deg);
+}
+
+#flip-highlight {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #000;
+}
+
+.flip-card-2.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.postcard {
+  height: 600px;
+  margin-top: 500px;
+}
+
+@media all and (min-width: 1150px) {
+  .gallery-1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .postcard {
+    height: 600px;
+    margin-top: 50px;
+  }
+
+}
